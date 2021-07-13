@@ -42,8 +42,8 @@
                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                <a href="index.html">Home</a>
                <a href="computers.html">Computers</a>
-               <a href="men.html">men Clothes</a>
-               <a href="women.html">women Clothes</a>
+               <a href="men.html">Men's Fashion</a>
+               <a href="women.html">Women's Fashion</a>
                <a href="contact.html">Contact</a>
             </div>
             <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="images/toggle-icon.png"></span>
@@ -53,7 +53,7 @@
                   <ul>
                      <li><a href="#"><img src="images/user-icon.png"></a></li>
                      <li><a href="#"><img src="images/trolly-icon.png"></a></li>
-                     <li><a href="#"><img src="images/search-icon.png"></a></li>
+                     <li><img src="images/search-icon.png"  onclick="searg()"></li>
                   </ul>
                </div>
             </form>
@@ -64,7 +64,7 @@
       <!-- computers section start -->
       <div class="computers_section layout_padding">
          <div class="container">
-            <h1 class="computers_taital">Computers & Laptop</h1>
+            <h1 class="computers_title">Computers & Laptop</h1>
          </div>
       </div>
       <div class="computers_section_2">
@@ -72,32 +72,32 @@
             <div class="computer_main">
                <div class="row">
                   <div class="col-md-4">
-                     <div class="computer_img"><img src="images/computer-img.png"></div>
-                     <h4 class="computer_text">COMPUTER</h4>
+                     <div class="computer_img" onmouseover="over('All in one PC')" onmouseout="out()" ><img src="images/computer-img.png"></div>
+                     <h4 class="computer_text">ALl in one</h4>
                      <div class="computer_text_main">
                         <h4 class="dell_text">Samsung</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
+                        <h6 class="price_text"><a href="#">RS50000</a></h6>
+                        <h6 class="price_text_1"><a href="#">RS100000</a></h6>
                      </div>
                      <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
                   </div>
                   <div class="col-md-4">
-                     <div class="computer_img"><img src="images/laptop-img.png"></div>
-                     <h4 class="computer_text">LAPTOP</h4>
+                     <div class="computer_img" onmouseover="over('Dell G3')" onmouseout="out()" ><img src="images/laptop-img.png"></div>
+                     <h4 class="computer_text">G3</h4>
                      <div class="computer_text_main">
                         <h4 class="dell_text">Dell</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
+                        <h6 class="price_text"><a href="#">RS50000</a></h6>
+                        <h6 class="price_text_1"><a href="#">RS100000</a></h6>
                      </div>
                      <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
                   </div>
                   <div class="col-md-4">
-                     <div class="computer_img"><img src="images/mac-img.png"></div>
-                     <h4 class="computer_text">macOS</h4>
+                     <div class="computer_img" onmouseover="over('Macbook')" onmouseout="out()" ><img src="images/mac-img.png"></div>
+                     <h4 class="computer_text">Macbook</h4>
                      <div class="computer_text_main">
                         <h4 class="dell_text">Apple</h4>
-                        <h6 class="price_text"><a href="#">$500</a></h6>
-                        <h6 class="price_text_1"><a href="#">$1000</a></h6>
+                        <h6 class="price_text"><a href="#">RS50000</a></h6>
+                        <h6 class="price_text_1"><a href="#">RS1000000</a></h6>
                      </div>
                      <div class="cart_bt_1"><a href="#">Add To Cart</a></div>
                   </div>
@@ -170,6 +170,8 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
+      <script src="js/tempf.js"></script>
+      <script src="js/voic.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

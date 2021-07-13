@@ -148,7 +148,7 @@
                         <li><a href="#">Beauty</a></li>
                         <li><a href="#">Mobiles</a></li>
                         <li><a href="#">Computers</a></li>
-                        <li><a href="#">Watchws</a></li>
+                        <li><a href="#">Watches</a></li>
                         <li><a href="#">Kitchen</a></li>
                         <li><a href="#">Sports</a></li>
                      </ul>
@@ -362,64 +362,8 @@
       </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
-      <script>
-         var txtInput = document.querySelector('#txtInput');
-         var voiceList = document.querySelector('#voiceList');
-         var btnSpeak = document.querySelector('#btnSpeak');
-         var synth = window.speechSynthesis;
-        
-        // var msg = new SpeechSynthesisUtterance();
-
-// var voices = window.speechSynthesis.getVoices();
-// msg.voice = voices[10]; 
-// msg.volume = 1; // From 0 to 1
-// msg.rate = 1; // From 0.1 to 10
-// msg.pitch = 2; // From 0 to 2
-// msg.text = "Como estas Joel";
-// msg.lang = 'es';
-// speechSynthesis.speak(msg);
-
-         var voices = [];
- 
-         // PopulateVoices();
-         // if(speechSynthesis !== undefined){
-         //     speechSynthesis.onvoiceschanged = PopulateVoices;
-         // }
- 
-         function over(xy){
-            synth.cancel(); //for only once
-             var toSpeak = new SpeechSynthesisUtterance(xy);
-            //  var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
-            //  voices.forEach((voice)=>{
-            //      if(voice.name === selectedVoiceName){
-            //          toSpeak.voice = voice;
-            //      }
-            //  });
-            voices = synth.getVoices();
-            toSpeak.voice=voices[1];
-            toSpeak.lang = 'es';
-             synth.speak(toSpeak);
-         };
-
-         function out(){
-            synth.cancel();
-         };
- 
-         // function PopulateVoices(){
-         //     voices = synth.getVoices();
-         //     var selectedIndex = voiceList.selectedIndex < 0 ? 0 : voiceList.selectedIndex;
-         //     voiceList.innerHTML = '';
-         //     voices.forEach((voice)=>{
-         //         var listItem = document.createElement('option');
-         //         listItem.textContent = voice.name;
-         //         listItem.setAttribute('data-lang', voice.lang);
-         //         listItem.setAttribute('data-name', voice.name);
-         //         voiceList.appendChild(listItem);
-         //     });
- 
-         //     voiceList.selectedIndex = selectedIndex;
-         // }
-     </script>
+      <script src="js/tempf.js"></script>
+      <script src="js/voic.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
@@ -443,73 +387,5 @@
            document.getElementById("mySidenav").style.width = "0";
          }
       </script> 
-      <script>
-
-var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
-var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
-var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
-
-var cats = [ 'men' , 'women' , 'computers' ];
-var grammar = '#JSGF V1.0; grammar cats; public <color> = ' + cats.join(' | ') + ' ;'
-
-var recognition = new SpeechRecognition();
-var speechRecognitionList = new SpeechGrammarList();
-speechRecognitionList.addFromString(grammar, 1);
-recognition.grammars = speechRecognitionList;
-recognition.continuous = false;
-recognition.lang = 'en-US';
-recognition.interimResults = false;
-recognition.maxAlternatives = 1;
-recognition.continuous = true;
-
-// var diagnostic = document.querySelector('.output');
-// var bg = document.querySelector('html');
-// var hints = document.querySelector('.hints');
-//var sear = document.querySelector('tryl');
-// var colorHTML= '';
-// cats.forEach(function(v, i, a){
-//   console.log(v, i);
-//   colorHTML += '<span style="background-color:' + v + ';"> ' + v + ' </span>';
-// });
-// hints.innerHTML = 'Tap/click then say a color to change the background color of the app. Try ' + colorHTML + '.';
-
- function searg () {
-  recognition.start();
-  console.log('Ready to receive a color command.');
-}
-
-recognition.onresult = function(event) {
-  // The SpeechRecognitionEvent results property returns a SpeechRecognitionResultList object
-  // The SpeechRecognitionResultList object contains SpeechRecognitionResult objects.
-  // It has a getter so it can be accessed like an array
-  // The first [0] returns the SpeechRecognitionResult at the last position.
-  // Each SpeechRecognitionResult object contains SpeechRecognitionAlternative objects that contain individual results.
-  // These also have getters so they can be accessed like arrays.
-  // The second [0] returns the SpeechRecognitionAlternative at position 0.
-  // We then return the transcript property of the SpeechRecognitionAlternative object
-  var cat = event.results[0][0].transcript;
-  //diagnostic.textContent = 'Result received: ' + cat + '.';
-  location.href= cat + '.html';
-  //bg.style.backgroundColor = color;
-  console.log('Confidence: ' + event.results[0][0].confidence);
-}
-//<a href="computers.html">Computers</a>
-
-
-recognition.onspeechend = function() {
-  recognition.stop();
-}
-
-recognition.onnomatch = function(event) {
- // diagnostic.textContent = "I didn't recognise that color.";
-}
-
-recognition.onerror = function(event) {
- // diagnostic.textContent = 'Error occurred in recognition: ' + event.error;
-}
-
-
-
-      </script>
    </body>
 </html>
