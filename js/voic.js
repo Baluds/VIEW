@@ -2,7 +2,7 @@ var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
-var cats = [ 'men' , 'women' , 'computers' ];
+var cats = [ 'men' , 'women' , 'computer' ,'home' ];
 var grammar = '#JSGF V1.0; grammar cats; public <color> = ' + cats.join(' | ') + ' ;'
 
 var recognition = new SpeechRecognition();
@@ -24,6 +24,16 @@ recognition.continuous = true;
 recognition.onresult = function(event) {
 
   var cat = event.results[0][0].transcript;
+  console.log('Value is ');
+  console.log(cat);
+  if(cat=='home')
+  {
+      cat='index';
+  }
+  if(cat=='man')
+  {
+      cat='men';
+  }
   location.href= cat + '.html';
   console.log('Confidence: ' + event.results[0][0].confidence);
 }
