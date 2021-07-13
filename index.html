@@ -39,6 +39,9 @@
     <input id='txtInput' /> <br><br>    
     <button id='btnSpeak'>Speak!</button> -->
       <!-- header section start -->
+      <div class="mobu tryl">
+         <img src="images/search-icon.png"  onclick="searg()">
+      </div>
       <div class="header_section haeder_main">
          <div class="container-fluid">
             <nav class="navbar navbar-light bg-light justify-content-between">
@@ -51,13 +54,13 @@
                   <a href="contact.html">Contact</a>
                </div>
                <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-               <a class="navbar-brand" href="index.html"><h1 class="tada">VIEW</h1></a>
+               <a href="index.html"><h1 class="tada">VIEW</h1></a>
                <form class="form-inline ">
                   <div class="login_text">
                      <ul>
                         <li><a href="#"><img src="images/user-icon.png"></a></li>
                         <li><a href="#"><img src="images/trolly-icon.png"></a></li>
-                        <li><img src="images/search-icon.png" class="tryl" onclick="searg()"></li>
+                        <li><img src="images/search-icon.png"  onclick="searg()"></li>
                      </ul>
                   </div>
                </form>
@@ -462,7 +465,7 @@ recognition.continuous = true;
 // var diagnostic = document.querySelector('.output');
 // var bg = document.querySelector('html');
 // var hints = document.querySelector('.hints');
-var sear = document.querySelector('tryl');
+//var sear = document.querySelector('tryl');
 // var colorHTML= '';
 // cats.forEach(function(v, i, a){
 //   console.log(v, i);
