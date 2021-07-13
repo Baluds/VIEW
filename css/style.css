@@ -157,6 +157,21 @@ a,
     transition: all .3s ease-in-out;
 }
 
+.tada
+{
+    font-size: 60px;
+    font-family: "Righteous";
+    font-weight: 800;
+}
+
+.tada1
+{
+    font-size: 60px;
+    font-family: "Righteous";
+    font-weight: 800;
+    color: white;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -265,7 +280,7 @@ button {
 }
 
 .sidenav a:hover {
-    color: #ff5d68;
+    color: #143a51;
 }
 
 .sidenav .closebtn {
@@ -342,6 +357,7 @@ button {
     position: relative;
     height: 627px;
     margin-top: 59px;
+    border-radius: 20px;
 }
 
 .image_1 {
@@ -377,14 +393,15 @@ button {
     background-color: #143a51;
     text-align: center;
     padding: 10px 0px;
+    border-radius: 20px;
 }
 .buynow_bt a:hover{
     color: #ffffff;
-    background-color: #ff5d68;
+    background-color: #143a51;
 }
 .buynow_bt.active a{
     color: #ffffff;
-    background-color: #ff5d68;
+    background-color: #143a51;
 }
 
 .contact_bt{
@@ -400,9 +417,10 @@ button {
     background-color: #143a51;
     text-align: center;
     padding: 10px 0px;
+    border-radius: 20px;
 }
 .contact_bt a:hover{
-    background-color: #ff5d68;
+    background-color: #143a51;
     color: #ffffff;
 }
 
@@ -434,7 +452,7 @@ button {
 #my_slider .carousel-control-next:hover,
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-next:focus {
-    background: #ff5d68;
+    background: #143a51;
     color: #ffffff;
 }
 
@@ -448,6 +466,7 @@ button {
     background-color: #143a51;
     height: auto;
     padding: 30px 0px;
+    margin: 30px 0px 60px 0px;
 }
 .category_main{
     width: 100%;
@@ -491,7 +510,7 @@ button {
     color: #ffffff;
 }
 .category_menu li a:hover{
-    color: #ff5d68;
+    color: #B8C3CA;
 }
 .category_section_2{
     width: 100%;
@@ -499,10 +518,9 @@ button {
 }
 .box_men{
     width: 100%;
-    border: 1px solid #9fa0a1;
     padding: 25px;
-    border-radius: 1px;
-    color: #899CA8 !important;
+    border-radius: 20px;
+    background-color:#B8C3CA !important;
 }
 .mobile_text{
     width: 100%;
@@ -542,9 +560,10 @@ button {
     float: left;
     font-size: 14px;
     color: #ffffff;
-    background-color: #ff5d68;
+    background-color: #143a51;
     text-align: center;
     padding: 8px 14px;
+    border-radius: 20px;
 }
 .cart_bt a:hover{
     color: #ffffff;
@@ -560,13 +579,13 @@ button {
 
 .rate_text {
     font-size: 16px;
-    color: #ff5d68;
+    color: #143a51;
     text-transform: uppercase;
     font-weight: bold;
     padding: 8px 0px 0px 0px;
 }
 .rate_text a {
-    color: #ff5d68;
+    color: #143a51;
 }
 
 .rate_text_1 {
@@ -585,9 +604,6 @@ button {
     float: left;
 }
 .computers_title{
-    background-image: linear-gradient(111deg,#753fff,#ff3c00) !important;
-    background-color: transparent !important;
-    color:white !important;
     width: 100%;
     float: left;
     font-size: 40px;
@@ -605,9 +621,8 @@ button {
 .computer_main {
     width: 100%;
     float: left;
-    border: 1px solid #9fa0a1;
-    padding: 50px 40px 50px 40px;
-    margin-top: 90px;
+    padding: 10px 40px 50px 40px;
+    margin-top: 20px;
 }
 
 .computer_img {
@@ -641,12 +656,12 @@ button {
 }
 .price_text {
     font-size: 16px;
-    color: #ff5d68;
+    color: #143a51;
     text-transform: uppercase;
     font-weight: bold;
 }
 .price_text a{
-    color: #ff5d68;
+    color: #143a51;
 }
 
 .price_text_1 {
@@ -671,9 +686,10 @@ button {
     float: left;
     font-size: 14px;
     color: #ffffff;
-    background-color: #ff5d68;
+    background-color: #143a51;
     text-align: center;
     padding: 8px 4px;
+    border-radius: 20px;
 }
 .cart_bt_1 a:hover{
     color: #ffffff;
@@ -690,13 +706,16 @@ button {
 .men_section_2{
     width: 100%;
     float: left;
+    margin: 0px 30px 0px 0px;
 }
 .men_main {
     width: 100%;
     float: left;
     border: 1px solid #9fa0a1;
     padding: 50px 40px 0px 40px;
-    margin-top: 90px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
 }
 
 .women_main {
@@ -704,7 +723,9 @@ button {
     float: left;
     border: 1px solid #9fa0a1;
     padding: 50px 40px 0px 40px;
-    margin-top: 90px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
 }
 .offer_text{
     width: 80%;
@@ -732,11 +753,12 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
-    background-color: #ff5d68;
+    background-color: #143a51;
     text-align: center;
     padding: 10px 0px;
     margin-top: 20px;
     font-weight: 400;
+    border-radius: 20px;
 }
 
 .read_bt a:hover {
@@ -766,7 +788,8 @@ button {
 .women_section_2 {
     width: 100%;
     float: left;
-    padding-top: 50px;
+    padding-top: 10px;
+    margin: 0px 30px 0px 0px;
 }
 
 .Get_offer_text {
@@ -782,6 +805,7 @@ button {
 .image_4{
     width: 100%;
     float: left;
+    margin: 30px;
 }
 /* women clothes section end */
 
@@ -843,7 +867,7 @@ button {
 .send_bt a {
     width: 100%;
     float: left;
-    background-color: #ff5d68;
+    background-color: #143a51;
     color: #fefeff;
     text-align: center;
     padding: 10px 0px;
@@ -932,7 +956,7 @@ button {
 }
 
 .call_text a:hover {
-    color: #ff5d68;
+    color: #B8C3CA;
 }
 
 .paddlin_left_0 {
@@ -959,7 +983,7 @@ button {
 }
 
 .footer_menu li a:hover {
-    color: #ff5d68;
+    color: #B8C3CA;
 }
 
 
@@ -985,7 +1009,7 @@ button {
 }
 
 .copyright_text a:hover {
-    color: #ff5d68;
+    color: #B8C3CA;
 }
 
 .margin_top_90 {
