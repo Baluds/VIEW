@@ -2,7 +2,7 @@ var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
-var cats = [ 'men' , 'women' , 'computer' ,'home' ];
+var cats = [ 'men' , 'women' , 'computer' ,'home' , 'contact' ];
 var grammar = '#JSGF V1.0; grammar cats; public <color> = ' + cats.join(' | ') + ' ;'
 
 var recognition = new SpeechRecognition();
