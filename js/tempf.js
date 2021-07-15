@@ -8,6 +8,7 @@ function over(xy){
     voices = synth.getVoices();
     toSpeak.voice=voices[1];
     toSpeak.lang = 'es';
+    toSpeak.rate=0.8;
      synth.speak(toSpeak);
         };
 

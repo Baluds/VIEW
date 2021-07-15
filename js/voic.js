@@ -18,21 +18,32 @@ recognition.continuous = true;
 
  function searg () {
   recognition.start();
-  console.log('Ready to receive a color command.');
 }
 
 recognition.onresult = function(event) {
 
   var cat = event.results[0][0].transcript;
-  console.log('Value is ');
-  console.log(cat);
-  if(cat=='home')
+  if(cat=='home' || cat=='man' || cat=='computers' || cat=='men'|| cat=='women' || cat=='computer'|| cat=='contact')
   {
-      cat='index';
+    if(cat=='home')
+    {
+        cat='index';
+    }
+    if(cat=='man')
+    {
+        cat='men';
+    }
+    if(cat=='computers')
+    {
+        cat='computer';
+    }
   }
-  if(cat=='man')
-  {
-      cat='men';
+  else{
+    cat='index'
+    over('This product is not available , please try again with valid product name');
+    recognition.stop();
+    recognition.start();
+
   }
   location.href= cat + '.html';
   console.log('Confidence: ' + event.results[0][0].confidence);
